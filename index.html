@@ -14,12 +14,16 @@
       
       <a-assets>        
         <a-asset-item id="ship" src="assets/ship.gltf"></a-asset-item>
+        <a-asset-item id="SH" src="assets/SignalHill.gltf"></a-asset-item>
        </a-assets>
         
 
-      <a-ring color="teal" radius-inner="1" radius-outer="2" positon="0 0 -20"></a-ring>
+      <a-ring color="teal" radius-inner="1" radius-outer="2" positon="0 0 -20" animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 8000; loop: true"></a-ring>
       
       <a-entity gltf-model="#ship" scale="0.5 0.5 0.5" position="0 10 -100"></a-entity>
+      <a-entity gltf-model="#SH" scale="0.1 0.1 0.1" position="-200 10 -100"></a-entity>
+      
+     
       
     </a-scene>
   </body>
