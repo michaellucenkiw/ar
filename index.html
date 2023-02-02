@@ -9,12 +9,17 @@
   
   <body>
     <a-scene>
-
+       
        <a-camera></a-camera> <!-- gpsMinDistance="2" -->
-     
+      
+      <a-assets>        
+        <a-asset-item id="ship" src="assets/ship.gltf"></a-asset-item>
+       </a-assets>
         
 
-      <a-ring color="teal" radius-inner="1" radius-outer="2" positon="0 0 -10"></a-ring>
+      <a-ring color="teal" radius-inner="1" radius-outer="2" positon="0 0 -20"></a-ring>
+      
+      <a-entity gltf-model="#ship" scale="0.5 0.5 0.5" position="0 10 -100"></a-entity>
       
     </a-scene>
   </body>
