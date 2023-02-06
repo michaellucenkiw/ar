@@ -9,14 +9,11 @@
   </head>
 
   <body>
-    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
-
-       <a-camera gps-new-camera='gpsMinDistance: 2'></a-camera>
+    <a-scene vr-mode-ui="enabled: false" arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false" renderer="antialias: true; alpha: true">
 
       <a-assets>
         <a-asset-item id="ship" src="assets/ship.gltf"></a-asset-item>
         <a-asset-item id="SH" src="assets/SignalHill.gltf"></a-asset-item>
-        
        </a-assets>
 
 
@@ -24,8 +21,10 @@
       <a-plane color="blue" height="10" width="20" gps-new-entity-place="latitude: 47.564387; longitude: -52.705546" scale="2 2 2"></a-planey>
       <a-plane color="red" height="10" width="20" position="0 10 -10"></a-plane>
       
-
       <a-entity gltf-model="#ship" position="0 0 -10"></a-entity>
+
+      <a-camera gps-new-camera='gpsMinDistance: 2'></a-camera>
+
     </a-scene>
   </body>
 </html>w
